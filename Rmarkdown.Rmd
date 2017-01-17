@@ -8,6 +8,10 @@ output:
 
 ```{r setup, include=FALSE}
 
-## A brilliant sentence!
+prDat <- read.table("GSE4051_MINI.tsv.txt", header = TRUE, row.names = 1)
+
+getwd()
+list.files()
+str(prDat)
 
 ```

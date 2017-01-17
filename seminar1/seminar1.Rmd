@@ -1,0 +1,88 @@
+---
+title: "seminar1"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Basic exploration of Data
+
+Reading data
+```{r }
+prDat <- read.table("GSE4051_MINI.tsv.txt", header = TRUE, row.names = 1)
+```
+
+Count how many rows
+
+```{r}
+nrow(prDat)
+```
+
+Count columns
+
+```{r}
+ncol(prDat)
+
+```
+
+Define head and tail
+
+```{r}
+head(prDat)
+tail(prDat)
+```
+
+
+```{r}
+sample(prDat[3])
+
+```
+What are variable names
+
+```{r}
+names(prDat)
+dimnames(prDat)
+```
+
+What is flavour of each variable
+
+```{r}
+str(prDat)
+```
+
+Inspect random ones
+
+```{r}
+sample(prDat[3])
+
+```
+
+Names?
+```{r}
+names(prDat)
+```
+
+Sampling columns 1 - 6
+
+```{r}
+sample(prDat[1:6])
+```
+
+levels of each factor variable?
+
+```{r}
+levels(prDat)
+```
+
+
+```{r}
+head(prDat)
+```
+
+```{r}
+    
+
+```
